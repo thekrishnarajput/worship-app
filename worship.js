@@ -12,7 +12,7 @@ const packagesRoute = require('./routes/admin/packagesRoute')
 const packageItemRoute = require('./routes/admin/packageItemRoute')
 const allPriestRoute = require('./routes/admin/allPriestRoute')
 
-const port = process.env.port || 3000
+const port = process.env.PORT || 8080
 
 const priestRoute = require('./routes/priest/priestRoute')
 
