@@ -12,6 +12,7 @@ const packagesRoute = require('./routes/admin/packagesRoute')
 const packageItemRoute = require('./routes/admin/packageItemRoute')
 const allPriestRoute = require('./routes/admin/allPriestRoute')
 
+const port = process.env.port || 3000
 
 const priestRoute = require('./routes/priest/priestRoute')
 
@@ -26,6 +27,6 @@ app.use('/admin/packages', packagesRoute)
 app.use('/admin/packageitem', packageItemRoute)
 app.use('/priest', priestRoute)
 
-app.listen(3000, ()=> {
-    console.log('listening on port 3000')
+app.listen(port, ()=> {
+    console.log('listening on port '+port)
 })
