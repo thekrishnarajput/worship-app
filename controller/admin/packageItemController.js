@@ -14,13 +14,13 @@ exports.addPackageItem = (request, response, next) => {
     var packItemImagePath3 = "";
     var packItemImagePath4 = "";
     if (request.files.length > 0) {
-        packItemImagePath1 = "http://localhost:3000/packageItem/images/" + request.files[0].filename
+        packItemImagePath1 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[0].filename
         if (request.files.length > 1) {
-            packItemImagePath2 = "http://localhost:3000/packageItem/images/" + request.files[1].filename
+            packItemImagePath2 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[1].filename
             if (request.files.length > 2) {
-                packItemImagePath3 = "http://localhost:3000/packageItem/images/" + request.files[2].filename
+                packItemImagePath3 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[2].filename
                 if (request.files.length > 3) {
-                    packItemImagePath4 = "http://localhost:3000/packageItem/images/" + request.files[3].filename
+                    packItemImagePath4 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[3].filename
                 }
             }
         }
@@ -65,13 +65,13 @@ exports.editPackageItem = (request, response) => {
     var packItemImagePath3 = "";
     var packItemImagePath4 = "";
     if (request.files.length > 0) {
-        packItemImagePath1 = "http://localhost:3000/packageItem/images/" + request.files[0].filename
+        packItemImagePath1 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[0].filename
         if (request.files.length > 1) {
-            packItemImagePath2 = "http://localhost:3000/packageItem/images/" + request.files[1].filename
+            packItemImagePath2 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[1].filename
             if (request.files.length > 2) {
-                packItemImagePath3 = "http://localhost:3000/packageItem/images/" + request.files[2].filename
+                packItemImagePath3 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[2].filename
                 if (request.files.length > 3) {
-                    packItemImagePath4 = "http://localhost:3000/packageItem/images/" + request.files[3].filename
+                    packItemImagePath4 = "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[3].filename
                 }
             }
         }
@@ -82,10 +82,10 @@ exports.editPackageItem = (request, response) => {
             packItemName: request.body.packItemName,
             packItemPrice: request.body.packItemPrice,
             packItemDescription: request.body.packItemDescription,
-            packItemImagePath1: "http://localhost:3000/packageItem/images/" + request.files[0].filename,
-            packItemImagePath2: "http://localhost:3000/packageItem/images/" + request.files[1].filename,
-            packItemImagePath3: "http://localhost:3000/packageItem/images/" + request.files[2].filename,
-            packItemImagePath4: "http://localhost:3000/packageItem/images/" + request.files[3].filename,
+            packItemImagePath1: "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[0].filename,
+            packItemImagePath2: "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[1].filename,
+            packItemImagePath3: "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[2].filename,
+            packItemImagePath4: "https://worshipbymukesh.herokuapp.com/packageItem/images/" + request.files[3].filename,
             catId: request.body.catId
         }
     })

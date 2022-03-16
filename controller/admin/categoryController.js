@@ -11,7 +11,7 @@ exports.addCategory = (request, response, next) => {
         return response.status(400).json({ errors: errors.array() });
     Category.create({
         catName: request.body.catName,
-        catImagePath: "http://localhost:3000/category/media/" + request.file.filename
+        catImagePath: "https://worshipbymukesh.herokuapp.com/category/media/" + request.file.filename
     })
         .then(result => {
             return response.status(201).json(result);
@@ -41,7 +41,7 @@ exports.editCategory = (request, response) => {
         {
             $set: {
                 catName: request.body.catName,
-                catImagePath: "http://localhost:3000/category/images/" + request.file.filename
+                catImagePath: "https://worshipbymukesh.herokuapp.com/category/images/" + request.file.filename
             }
         })
         .then(result => {
